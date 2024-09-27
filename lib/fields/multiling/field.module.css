@@ -1,0 +1,10 @@
+/*
+    Make Prettier: Reduce gap between language tabs and content 
+*/
+[data-custom-field='multiling'][data-custom-show-title='false']
+	> fieldset
+	> [data-ui='Box']
+	> [data-ui='Grid']
+	> [data-ui='Stack'] {
+	grid-gap: 2em;
+}

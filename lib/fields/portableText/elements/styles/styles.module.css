@@ -1,0 +1,17 @@
+.title {
+	font-size: 1.4em;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+.subtitle1 {
+	font-size: 1.2em;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}
+
+.subtitle2 {
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}

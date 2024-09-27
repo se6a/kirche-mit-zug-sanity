@@ -1,0 +1,31 @@
+[data-custom-field='arrayInlineEditor'] {
+	[data-ui='ArrayInput__content'] {
+		background: unset !important;
+		> [data-ui='Card'] {
+			border: unset !important;
+			background: unset !important;
+			padding: 0 !important;
+		}
+	}
+
+	&[data-custom-allow-navigation='false']
+		[data-custom-element='arrayInlineEditorItemNavigation'] {
+		opacity: 0.5 !important;
+		pointer-events: none !important;
+	}
+
+	/* Background of Tab Field in Nested Item: */
+	[data-custom-field='arrayInlineEditorItem'] [data-custom-field='arrayInlineEditorItem'] {
+		> [data-ui='Card'] {
+			background-color: var(--card-bg-color) !important;
+		}
+
+		> [data-ui='Card']:first-child
+			> [data-ui='Flex']:first-child
+			> [data-ui='Stack']:first-child
+			> [data-ui='Stack']:nth-child(2)
+			> [data-ui='Card']:first-child {
+			background-color: transparent !important;
+		}
+	}
+}
