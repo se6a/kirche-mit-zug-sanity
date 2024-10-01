@@ -1,5 +1,13 @@
 import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list';
-import {FolderIcon, TagsIcon, InfoOutlineIcon, EyeClosedIcon} from '@sanity/icons';
+import {
+    BookIcon,
+    HomeIcon,
+    FolderIcon,
+    TagsIcon,
+    InfoOutlineIcon,
+    EyeClosedIcon,
+    ProjectsIcon,
+} from '@sanity/icons';
 
 export const structure = (S, context) => {
     // prettier-ignore
@@ -11,11 +19,22 @@ export const structure = (S, context) => {
                 S,
                 context,
                 title: "Inseln",
-                icon: FolderIcon
+                icon: ProjectsIcon
             }),
-            ...S.documentTypeListItems().filter(item => ["islands", "page-impressum", "page-privacy", "categories"].includes(item.getSchemaType()?.name) === false),
+            ...S.documentTypeListItems().filter(item => [
+                "categories",
+                "islands",
+                "page-start","page-impressum",
+                "page-privacy",
+                "footer",
+            ].includes(item.getSchemaType()?.name) === false),
             S.documentTypeListItem("categories")
                 .icon(TagsIcon),
+            S.divider(),
+            S.documentListItem()
+                .id("start")
+                .schemaType("page-start")
+                .icon(HomeIcon),
             S.documentListItem()
                 .id("impressum")
                 .schemaType("page-impressum")
@@ -24,5 +43,11 @@ export const structure = (S, context) => {
                 .id("privacy")
                 .schemaType("page-privacy")
                 .icon(EyeClosedIcon),
+            S.divider(),
+            S.documentListItem()
+                .id("siteFooter")
+                .title("Footer")
+                .schemaType("footer")
+                .icon(BookIcon),
         ])
 };

@@ -22,6 +22,8 @@ export default {
             };
         },
     },
+
+    readOnly: true,
     fields: [
         {
             type: 'number',

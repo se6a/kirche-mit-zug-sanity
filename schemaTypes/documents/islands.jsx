@@ -8,7 +8,7 @@ export default {
         select: {
             title: 'title',
             categoryColor: 'category.color',
-            categoryName: 'category.name',
+            categoryName: 'category.shortName',
         },
         prepare({title, categoryColor, categoryName}) {
             return {
@@ -101,7 +101,7 @@ export default {
             name: 'illustration',
             title: 'Illustration',
             options: {
-                collapse: true,
+                collapsed: true,
             },
         },
     ],
