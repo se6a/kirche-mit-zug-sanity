@@ -93,6 +93,7 @@ export default {
             title: 'Bild',
             options: {
                 collapsed: true,
+                hotspot: true,
             },
         },
 
@@ -102,6 +103,7 @@ export default {
             title: 'Illustration',
             options: {
                 collapsed: true,
+                hotspot: true,
             },
         },
     ],
