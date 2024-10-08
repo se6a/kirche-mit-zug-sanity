@@ -4,20 +4,20 @@ import portableText from './portableText';
 import link, {createLink} from '/lib/fields/link';
 
 export default [
-  link,
-  createLink({
-    name: 'linkReadMore',
-    title: 'Mehr Lesen',
-    useDestinations: ['pdf', 'url'],
-    fields: [
-      {
-        name: 'label',
-        type: 'string',
-        initialValue: 'mehr lesen',
-      },
-    ],
-  }),
-  picture,
-  textWithCount,
-  portableText,
+    link,
+    createLink({
+        name: 'linkReadMore',
+        title: 'Mehr Lesen',
+        useDestinations: ['pdf', 'url'],
+        fields: [
+            {
+                name: 'label',
+                type: 'string',
+                initialValue: 'mehr lesen',
+            },
+        ],
+    }),
+    picture,
+    textWithCount,
+    portableText,
 ];

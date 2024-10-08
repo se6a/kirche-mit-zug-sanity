@@ -23,7 +23,8 @@ export default {
         },
     },
 
-    readOnly: true,
+    readOnly: false,
+
     fields: [
         {
             type: 'number',

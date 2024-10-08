@@ -103,7 +103,6 @@ export default {
             title: 'Illustration',
             options: {
                 collapsed: true,
-                hotspot: true,
             },
         },
     ],

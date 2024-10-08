@@ -43,9 +43,6 @@ export default page({
                 {
                     type: 'picture',
                     name: 'picture',
-                    options: {
-                        hotspot: true,
-                    },
                 },
             ],
         },
