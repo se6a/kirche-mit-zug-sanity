@@ -91,19 +91,12 @@ export default {
             type: 'picture',
             name: 'image',
             title: 'Bild',
-            options: {
-                collapsed: true,
-                hotspot: true,
-            },
         },
 
         {
             type: 'picture',
             name: 'illustration',
             title: 'Illustration',
-            options: {
-                collapsed: true,
-            },
         },
     ],
 };
